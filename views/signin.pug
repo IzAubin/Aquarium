@@ -1,0 +1,18 @@
+.container 
+    form.container(action='/signin' method='POST')
+        .form-group
+            h1.font-weight-bold.text-left(style="font-family:'Yaldevi', sans-serif;") SIGN IN
+            br
+            .row(style="font-family: 'Yaldevi', sans-serif;")
+            .col-md-6
+                label(for='username') Username:
+                br
+                input#fname.form-control(type='text' name='username' placeholder='Please enter your username...' value='' maxlength='100' required='')
+                br
+            .col-md-6
+                label(for='password') Password:
+                br
+                input#lname.form-control(type='text' name='password' placeholder='Please enter your F%!# password...' value='' maxlength='100' required='')
+                br
+                br 
+                button.btn.btn-secondary(style="font-family: 'Yaldevi', sans-serif;background-color: #031443" type='submit') Submit

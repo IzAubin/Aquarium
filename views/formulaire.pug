@@ -1,0 +1,36 @@
+include bootstrap.pug
+include nav.pug
+include Hero.pug
+.container
+    h1.font-weight-bold.text-left(style="font-family:'Yaldevi', sans-serif;") 
+    form(action='/formulaire' method="POST")
+        label(for='salinite') Salinite:
+        br
+        input#salinite(type='text' name='salinite')
+        br
+        label(for='No3') No3:
+        br
+        input#no3(type='text' name='no3')
+        br
+        label(for='Po4') Po4:
+        br
+        input#po4(type='text' name='po4')
+        br
+        label(for='alcalinite') Alcalinite:
+        br
+        input#alcalinite(type='text' name='alcalinite')
+        br
+        label(for='calcium') Calcium:
+        br
+        input#calcium(type='text' name='calcium')
+        br
+        label(for='magnesium') Magnésium:
+        br
+        input#magnesium(type='text' name='magnesium')
+        br
+        label(for='ph') Ph:
+        br
+        input#ph(type='text' name='ph')
+        br
+        br
+        button.btn.btn-secondary(style="font-family: 'Yaldevi', sans-serif;background-color: #031443" type='submit') Submit

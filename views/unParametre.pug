@@ -1,0 +1,16 @@
+head
+  meta(charset='UTF-8')
+  title=title
+body
+  include bootstrap.pug
+  include nav.pug
+  include hero.pug
+  .container
+    h1.font-weight-bold.text-left(style="font-family:'Yaldevi', sans-serif;") CONCLUSION
+    br
+    table
+        th No3
+        each item in Parametres
+          tr
+          td= item.no3
+           

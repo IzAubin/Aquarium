@@ -1,0 +1,36 @@
+head
+  meta(charset='UTF-8')
+  title=title
+body
+  include bootstrap.pug
+  include nav.pug
+  include hero.pug
+  .container
+    h1.font-weight-bold.text-left(style="font-family:'Yaldevi', sans-serif;") LISTING
+    br
+    table
+        tr
+        th Salinite
+        th No3
+        th Po4
+        th Alcalinite
+        th Calcium
+        th Magnésium
+        th Ph
+        th Date/Hour 
+        th id
+
+        each item in Parametres
+            tr
+            td= item.salinite 
+            td= item.no3
+            td= item.no4
+            td= item.alcalinite
+            td= item.calcium
+            td= item.magnesium
+            td= item.ph
+            td= item.createdAt 
+            td= item.id
+            td
+              form(action='/affichage' method="POST")
+                button.btn.btn-secondary(style="font-family: 'Yaldevi', sans-serif;background-color: #031443" name="deleteButton" value=item.id type='submit' ) Delete
